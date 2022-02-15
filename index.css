@@ -420,7 +420,7 @@ input[type="radio"]#visa {
 
 }
 
-.sect2 h1 {
+.sect2 .h1{
     font-size: 5rem;
     margin-left: 519px;
     padding-top: 200px;
@@ -428,14 +428,48 @@ input[type="radio"]#visa {
     position: relative;
 }
 
-.sect2 h1::before {
-        content: "";
-        position: absolute;
-        top: 251px;
-        left: -10px;
-        height: 30px;
-        width: 380px;
-        border-radius: 30px;
-        background-color: #6b87ee;
+.sect2 .h1::before {
+    content: "";
+    position: absolute;
+    top: 251px;
+    left: -10px;
+    height: 30px;
+    width: 380px;
+    border-radius: 30px;
+    background-color: #6b87ee;
     clip-path:polygon(0 0,100% 0 ,100% 80%,80% 35%,64% 100%,48% 35%,31% 100%,16% 35%,0 88%) ;
+}
+.sect2 .left{
+   width: 35%;
+   height: 17%;
+   margin-top: 92px;
+   margin-left: 10%;
+   background-color: rgb(43, 226, 83);
+   position: relative;
+}
+.sect2 .left h1{
+    font-size:2.5rem; 
+    color:white;
+    margin-left:40px;
+    
+}
+.sect2 .left h1::before {
+    content:"";
+    position: absolute;
+    width: 15px;
+    height:15px ;
+    top:2px;
+    left:5px  ;
+    background-color:blueviolet;
+    border:2px white solid ;
+    border-radius:50px;    
+}
+
+
+.sect2 .left p {
+    font-size: 1.1rem;
+    color: white;
+    margin-left: 40px;
+    margin-top:10px; 
+
 }
