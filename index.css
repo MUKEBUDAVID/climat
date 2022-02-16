@@ -410,7 +410,7 @@ input[type="radio"]#visa {
 /* section two */
 
 .sect2 {
-    height: 100vh;
+    height: 160vh;
     background-color: #232323;
     background-image: url('image/10.png');
     background-size: 110%;
@@ -420,7 +420,7 @@ input[type="radio"]#visa {
 
 }
 
-.sect2 .h1{
+.sect2 .h1 {
     font-size: 5rem;
     margin-left: 519px;
     padding-top: 150px;
@@ -437,33 +437,37 @@ input[type="radio"]#visa {
     width: 380px;
     border-radius: 30px;
     background-color: #6b87ee;
-    clip-path:polygon(0 0,100% 0 ,100% 80%,80% 35%,64% 100%,48% 35%,31% 100%,16% 35%,0 88%) ;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 35%, 64% 100%, 48% 35%, 31% 100%, 16% 35%, 0 88%);
 }
-.sect2 .left{
-   width: 35%;
-   height: 17%;
-   margin-top: 150px;
-   margin-left: 10%;
-   /* background-color: rgb(43, 226, 83); */
-   position: relative;
+
+.sect2 .left {
+    width: 35%;
+    height: 17%;
+    margin-top: 150px;
+    margin-left: 10%;
+    /* background-color: rgb(43, 226, 83); */
+    position: relative;
 }
-.sect2 .left h1{
-    font-size:2.5rem; 
-    color:white;
-    margin-left:40px;
-    
+
+.sect2 .left h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-left: 40px;
+
 }
+
 .sect2 .left h1::before {
-    content:"";
+    content: "";
     position: absolute;
     width: 15px;
-    height:15px ;
-    top:2px;
-    left:5px  ;
-    background-color:blueviolet;
-    border:2px white solid ;
-    border-radius:50px;    
+    height: 15px;
+    top: 2px;
+    left: 5px;
+    background-color: blueviolet;
+    border: 2px white solid;
+    border-radius: 50px;
 }
+
 .sect2 .left h1::after {
     content: "";
     position: absolute;
@@ -471,7 +475,7 @@ input[type="radio"]#visa {
     height: 10px;
     top: 27px;
     left: 5px;
-    background-color:#6b87ee;
+    background-color: #6b87ee;
     border-radius: 50px;
 }
 
@@ -479,14 +483,72 @@ input[type="radio"]#visa {
     font-size: 1.1rem;
     color: white;
     margin-left: 40px;
-    margin-top:10px; 
+    margin-top: 10px;
 
 }
 
-.sect2  img {
+.sect2 .img {
     position: absolute;
     height: 300px;
     left: 55%;
-    top: 850px; 
+    top: 850px;
 
+}
+
+.twon {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin-left: 10%;
+    max-height: auto;
+    /* background-color: rgb(226, 183, 43); */
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.twon img {
+    max-width: 200px;
+    max-height: 300px;
+    margin-left: 10%;
+
+}
+
+.twon .botton {
+    margin-right: 10%;
+    position: relative;
+
+}
+ .botton h1 {
+    font-size: 2.5rem;
+    color: white;
+    
+
+}
+.botton  h1::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 2px;
+    left: -20px;
+    background-color: blueviolet;
+    border: 2px white solid;
+    border-radius: 50px;
+}
+.botton h1::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 8px;
+    top: 27px;
+    left: -20px;
+    background-color: #6b87ee;
+    border-radius: 50px;
+}
+
+.twon .botton p {
+   font-size: 1.1rem;
+    color: white;
+    margin-top: 20px;
 }
