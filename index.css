@@ -410,7 +410,8 @@ input[type="radio"]#visa {
 /* section two */
 
 .sect2 {
-    height: 160vh;
+    height: 155vh;
+    width: 100%;
     background-color: #232323;
     background-image: url('image/10.png');
     background-size: 110%;
@@ -440,13 +441,21 @@ input[type="radio"]#visa {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 35%, 64% 100%, 48% 35%, 31% 100%, 16% 35%, 0 88%);
 }
 
-.sect2 .left {
-    width: 35%;
-    height: 17%;
+.sect2 .one {
+    width: 80%;
+    height: 290px;
     margin-top: 150px;
     margin-left: 10%;
     /* background-color: rgb(43, 226, 83); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sect2 .left {
     position: relative;
+    margin-top: 70px;
+    
+
 }
 
 .sect2 .left h1 {
@@ -462,7 +471,7 @@ input[type="radio"]#visa {
     width: 15px;
     height: 15px;
     top: 2px;
-    left: 5px;
+    left: 15px;
     background-color: blueviolet;
     border: 2px white solid;
     border-radius: 50px;
@@ -472,7 +481,7 @@ input[type="radio"]#visa {
     content: "";
     position: absolute;
     width: 100px;
-    height: 10px;
+    height: 8px;
     top: 27px;
     left: 5px;
     background-color: #6b87ee;
@@ -483,15 +492,15 @@ input[type="radio"]#visa {
     font-size: 1.1rem;
     color: white;
     margin-left: 40px;
-    margin-top: 10px;
+    margin-top: 20px;
 
 }
 
 .sect2 .img {
     position: absolute;
-    height: 300px;
+    height: 270px;
     left: 55%;
-    top: 850px;
+    /* top: 850px; */
 
 }
 
@@ -501,6 +510,7 @@ input[type="radio"]#visa {
     width: 70%;
     margin-left: 10%;
     max-height: auto;
+    margin-top: 30px;
     /* background-color: rgb(226, 183, 43); */
     justify-content: space-around;
     align-items: center;
@@ -551,4 +561,5 @@ input[type="radio"]#visa {
    font-size: 1.1rem;
     color: white;
     margin-top: 20px;
+    
 }
