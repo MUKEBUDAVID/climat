@@ -13,10 +13,11 @@ html {
 
 
 body {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     overflow-x: hidden;
     max-width: 1920px;
+    /* max-width: 2560px; */
     margin: 0 auto;
     background-image: url('image/13.png');
     background-repeat: no-repeat;
@@ -24,6 +25,10 @@ body {
     background-size: 50%;
     z-index: -1;
     position: relative;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
 
 }
 
@@ -419,23 +424,32 @@ input[type="radio"]#visa {
     background-position-x: -53px;
     background-position-y: -61px;
 
+
+}
+
+.sect2 .entete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: darkcyan; */
+    width: 100%;
+    height: 100px;
+    margin-top: 156px;
 }
 
 .sect2 .h1 {
     font-size: 5rem;
-    margin-left: 519px;
-    padding-top: 150px;
     color: white;
     position: relative;
 }
 
-.sect2 .h1::before {
+.sect2 .h1::after {
     content: "";
     position: absolute;
-    top: 199px;
-    left: -10px;
+    top: 59px;
+    left: 60px;
     height: 30px;
-    width: 380px;
+    width: 180px;
     border-radius: 30px;
     background-color: #6b87ee;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 35%, 64% 100%, 48% 35%, 31% 100%, 16% 35%, 0 88%);
@@ -444,17 +458,19 @@ input[type="radio"]#visa {
 .sect2 .one {
     width: 80%;
     height: 290px;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-left: 10%;
     /* background-color: rgb(43, 226, 83); */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
 }
+
 .sect2 .left {
     position: relative;
     margin-top: 70px;
-    
+
 
 }
 
@@ -498,7 +514,7 @@ input[type="radio"]#visa {
 
 .sect2 .img {
     position: absolute;
-    height: 270px;
+    max-height: 270px;
     left: 55%;
     /* top: 850px; */
 
@@ -529,13 +545,15 @@ input[type="radio"]#visa {
     position: relative;
 
 }
- .botton h1 {
+
+.botton h1 {
     font-size: 2.5rem;
     color: white;
-    
+
 
 }
-.botton  h1::before {
+
+.botton h1::before {
     content: "";
     position: absolute;
     width: 15px;
@@ -546,6 +564,7 @@ input[type="radio"]#visa {
     border: 2px white solid;
     border-radius: 50px;
 }
+
 .botton h1::after {
     content: "";
     position: absolute;
@@ -558,8 +577,284 @@ input[type="radio"]#visa {
 }
 
 .twon .botton p {
-   font-size: 1.1rem;
+    font-size: 1.1rem;
     color: white;
     margin-top: 20px;
-    
+
 }
+
+
+
+
+/* Media queri for section twon */
+/* ......................... */
+@media (max-width:2560px) {
+    .sect2 {
+        height: 100%;
+        width: 100%;
+        background-color: #232323;
+        background-image: url(image/10.png);
+        background-size: 105%;
+        background-repeat: no-repeat;
+        background-position-x: -22px;
+        background-position-y: -67px;
+        margin: 0 0 0 0;
+
+
+    }
+}
+
+@media (max-width:1024px) {
+    .twon img {
+        max-width: 150px;
+        max-height: 199px;
+        margin-left: 2%;
+
+    }
+
+}
+
+@media (max-width:883px) {
+    .sect2 {
+        height: 100%;
+        width: 100%;
+        background-color: #232323;
+        /* background-image: url('image/10.png'); */
+        background-size: 120% 100px;
+        background-repeat: no-repeat;
+        background-position-x: -25px;
+        background-position-y: -26px;
+
+        margin: 0 0 0 0;
+
+
+    }
+
+    .sect2 .entete {
+        margin-top: 85px;
+    }
+
+    .sect2 .img {
+        position: absolute;
+        max-height: 150px;
+        left: 75%;
+        top: 10px;
+
+    }
+
+    .twon {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        /* background-color: crimson; */
+        justify-content: space-between;
+
+    }
+
+    .twon img {
+        max-width: 150px;
+        max-height: 200px;
+        margin-left: 10%;
+
+    }
+
+
+    .twon .botton {
+        margin-left: 14%;
+    }
+
+    .botton h1 {
+        font-size: 1.7rem;
+        margin-left: 10px;
+    }
+
+
+}
+
+
+
+
+
+@media (max-width:425px) {
+    .sect2 .entete {
+        margin-top: 20px;
+    }
+
+    .sect2 .one {
+        flex-direction: row;
+        /* background-color: brown; */
+        height: 250px;
+    }
+
+    .sect2 .left {
+        position: relative;
+        margin-top: 15px;
+    }
+
+    .sect2 .left h1 {
+        font-size: 1.7rem;
+        margin-top: 7px;
+    }
+
+    .sect2 .img {
+        max-height: 130px;
+        max-width: 100px;
+        top: 150px;
+        left: 50px;
+    }
+
+    .twon {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 80%;
+        /* background-color: crimson; */
+        justify-content: space-between;
+
+
+    }
+
+    .twon img {
+        max-width: 50px;
+        max-height: 100px;
+        margin-left: 10%;
+
+    }
+
+    .botton h1 {
+        font-size: 1.5rem;
+        margin-left: 10px;
+    }
+
+    .botton h1::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 5px;
+        top: 22px;
+        left: -20px;
+        background-color: #6b87ee;
+        border-radius: 50px;
+    }
+
+    .twon .botton p {
+        font-size: 0.8rem;
+        color: white;
+        margin-top: 20px;
+
+    }
+
+    .twon img {
+        margin-left: -5%;
+
+    }
+
+}
+
+
+@media (max-width:425px) {
+
+    .sect2 .h1::after {
+        content: "";
+        position: absolute;
+        top: 59px;
+        left: 50px;
+        height: 8px;
+        width: 180px;
+        border-radius: 30px;
+        background-color: #6b87ee;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 35%, 64% 100%, 48% 35%, 31% 100%, 16% 35%, 0 88%);
+    }
+    .sect2 .left h1::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 5px;
+        top: 27px;
+        left: 5px;
+        background-color: #6b87ee;
+        border-radius: 50px;
+    }
+
+    .sect2 .one {
+        margin-top: 20px;
+        /* background-color: brown; */
+        height: 250px;
+    }
+
+    .sect2 .img {
+        max-height: 130px;
+        max-width: 100px;
+        top: 158px;
+        left: 50px;
+    }
+
+    .twon {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 80%;
+        /* background-color: crimson; */
+        justify-content: space-between;
+        margin-top: 17px;
+    }
+}
+
+@media (max-width:320px) {
+    .sect2 .entete {
+        margin-top: 13px;
+    }
+
+    .sect2 .h1 {
+        font-size: 3rem;
+        }
+
+        .sect2 .h1::after {
+            content: "";
+            position: absolute;
+            top: 39px;
+            left: 12px;
+            height: 8px;
+            width: 180px;
+            border-radius: 30 px;
+            background-color: #6b87ee;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 35%, 64% 100%, 48% 35%, 31% 100%, 16% 35%, 0 88%);
+        }
+
+        .sect2 .left h1 {
+            font-size: 1.2rem;
+            margin-top: -32px;
+        }
+        .sect2 .left h1::before {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            top: -39px;
+            left: 15px;
+            background-color: blueviolet;
+            border: 2px white solid;
+            border-radius: 50px;
+        }
+        .sect2 .left h1::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 5px;
+            top: -11px;
+            left: 5px;
+            background-color: #6b87ee;
+            border-radius: 50px;
+        }
+        .sect2 .img {
+            max-height: 130px;
+            max-width: 100px;
+            top: 138px;
+            left: 50px;
+        }
+        .twon .botton {
+            margin-left: 14%;
+            margin-top: -10px;
+        }
+
+}
+
+
